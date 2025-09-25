@@ -16,10 +16,11 @@ Es erweitert den Standardansatz um zwei zentrale Innovationen:
 - ASCII-Visualisierung im Terminal
 - Laufzeitmessung (nanosecond precision)
 
-# Roadmap
+## Roadmap
 - Benchmarking: Laufzeit mit Algorithmen wie DFS, Prim, Kruskal... vergleichen
 - Visualizer: Zeigen, wie das Maze entsteht
 - Exports: PNGs des Mazes
 - Algorithmus-Erweitern: Dead-End-Braiding implementieren
 - Vollständige Theorie-Dokumentation schreiben / commiten
+- Kommentieren
 - Tests: Unit-Tests

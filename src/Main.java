@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args){
-        int w = 1000;
-        int h = 1000;
+        int w = 11;
+        int h = 11;
         var m = new AdDfsMaze(w,h,21L,50,0.8,0.08);
         long t1 = System.nanoTime();
         m.generate(w-1,0);  // Start: oben rechts (x=W-1,y=0)
