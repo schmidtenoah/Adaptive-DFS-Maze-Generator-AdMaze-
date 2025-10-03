@@ -1,26 +1,26 @@
 # AdMaze – Adaptive DFS Maze Generator
 
-AdMaze ist ein Java-Projekt zur Generierung von Labyrinthen, basierend auf dem klassischen DFS-Backtracker-Algorithmus.  
-Es erweitert den Standardansatz um zwei zentrale Innovationen:
+AdMaze is a Java project for generating mazes using the classic DFS backtracking algorithm, extended with two key innovations:
 
-1. **Anti-Persistenz-Heuristik (`beta`, `k`)**  
-   Verhindert monotone Korridore, indem kürzlich genutzte Richtungen weniger wahrscheinlich gewählt werden (Softmax-Gewichtung).
+1. **Anti-Persistence Heuristic (`beta, k`)**
+   Prevents long, monotonous corridors by making recently used directions less likely (via softmax weighting).
 
 2. **Braiding (`pBraid`)**  
-   Öffnet kontrolliert zusätzliche Verbindungen, um Sackgassen zu reduzieren und "Loops" im Maze zu erzeugen (– ohne 2×2-Räume).
+   Intentionally opens additional passages to reduce dead ends and create loops — without allowing 2×2 open rooms.
 
 ## Features
-- Parametrisierbare Maze-Größe (W, H)
-- Start- und Zielmarkierung (S/E)
-- Optionale Braiding-Funktionalität
-- ASCII-Visualisierung im Terminal
-- Laufzeitmessung (nanosecond precision)
+- Configurable maze size (W, H)
+- Start (S) and exit (E) markers
+- Optional braiding functionality
+- ASCII-based visualization in the terminal
+- Runtime measurement (nanosecond precision)
 
 ## Roadmap
-- Benchmarking: Laufzeit mit Algorithmen wie DFS, Prim, Kruskal... vergleichen
-- Visualizer: Zeigen, wie das Maze entsteht
-- Exports: PNGs des Mazes
-- Algorithmus-Erweitern: Dead-End-Braiding implementieren
-- Vollständige Theorie-Dokumentation schreiben / commiten
-- Kommentieren
-- Tests: Unit-Tests
+- Benchmarking: Compare runtime with DFS, Prim, Kruskal, etc.
+- Visualizer: Show maze generation in progress
+- Exports: Save mazes as PNG images
+- Algorithm extensions: Implement dead-end braiding
+- Documentation: Write and commit the full theoretical background
+- Comments: Improve documentation
+- Clean-up: Refactor and optimize code where needed
+- Testing: Add unit tests
